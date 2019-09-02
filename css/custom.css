@@ -1,0 +1,316 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+
+.row {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  left: 30vw;
+  z-index: 999;
+  top: 0;
+}
+
+.navbar a {
+  color: #525453;
+  font-weight: bold;
+  transition: color .3s ease;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes play18 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -450px 0px;
+  }
+}
+
+@keyframes play18-reverse {
+  0% {
+    background-position: -450px 0px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+.menubtn {
+  animation-duration: 300ms;
+  animation-timing-function: steps(18);
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.menubtn.play {
+  animation-name: play18;
+}
+.menubtn.play-reverse {
+  animation-name: play18-reverse;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #525453;
+  top: 0px;
+  right: -100%;
+  transition: right .5s ease-in;
+  z-index: 2;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu li {
+  margin: 10px 0px;
+}
+
+.menu a {
+  color: white;
+  font-size: 1.2em;
+}
+
+.open {
+  right: 0;
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-top: 100px;
+}
+
+
+
+#section-home {
+  padding-top: 60px;
+}
+
+.section-1-text {
+  min-height: 100vh;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-1-text p {
+  text-align: center;
+}
+
+.img-col {
+  padding: 0;
+  margin: 0;
+}
+
+.title-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 60px;
+
+}
+
+.section-title {
+  font-weight: 900;
+  color: #EEE435;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+#section-instrumenten > .container-fluid {
+  padding: 0;
+}
+
+#download-btn {
+  font-weight: bold;
+  background-color: white;
+  color: #EEE435;
+  border: 2px solid #EEE435;
+  transition: all .3s ease;
+  margin: 50px 0;
+}
+
+#download-btn:hover {
+  color: #525453;
+  border-color:  #525453;
+}
+
+#videos-btn {
+  font-weight: bold;
+  background-color: white;
+  color: #EEE435;
+  border: 2px solid #EEE435;
+  transition: all .3s ease;
+  margin-top: 30px;
+}
+
+#videos-btn:hover {
+  color: #525453;
+  border-color:  #525453;
+}
+
+.enter-view {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all .5s ease;
+}
+
+.entered {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+
+
+@media only screen and (min-width: 576px) {
+  iframe {
+    transform: scale(1.5);
+    margin: 50px 0px;
+  }
+  .section-1-text {
+    font-size: 1.3em;
+  }
+  .img-fluid {
+    max-width: 400px;
+  }
+  p {
+    max-width: 400px;
+  }
+  #download-btn {
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .section-1-text p {
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  .navbar {
+    width: 70%;
+    transition: left .3s ease;
+  }
+  #section-boek > .row {
+    width: 100%;
+  }
+
+  #section-boek > .row > .col-12 {
+    padding: 0;
+    position: relative;
+    left: 30%;
+  }
+
+  #front-img, #section-boek {
+    opacity: 1;
+    transition: opacity top .5s ease;
+  }
+
+  #section-boek.shift {
+    opacity: 0 !important;
+  }
+
+  #section-home.shift #front-img {
+    opacity: 0 !important;
+  }
+
+  .section {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .navbar.shift {
+    left: 0;
+  }
+  .navbar.centered {
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+
+  #section-boek {
+    padding-top: 100px;
+  }
+
+  #download-btn {
+    margin-bottom: 0;
+  }
+
+  #section-wiebenik {
+    margin-top: 100px;
+  }
+
+ #section-instrumenten {
+   padding-top: 100px;
+ }
+
+ #section-instrumenten > .container-fluid > .row > .col-12 img {
+    max-width: 500px;
+  }
+
+  #front-img {
+    position: relative;
+    top: -60px;
+    width: 50vw;
+  }
+  .img-fluid {
+    max-width: 100%;
+    min-width: 30vw;
+  }
+
+  p {
+    max-width: none;
+  }
+
+  .navbar {
+    justify-content: space-around;
+    background-color: #EEE435;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
