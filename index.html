@@ -1,152 +1,191 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Peter Rober - Samen in gezinstherapie</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="navbar">
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <a class="d-none d-lg-block link"  id="home" href="#">home</a>
-          <a class="d-none d-lg-block link" id="boek" href="#">het boek</a>
-          <a class="d-none d-lg-block link"  id="wiebenik" href="#">wie ben ik?</a>
-          <a class="d-none d-lg-block link"  id="instrumenten" href="#">de instrumenten</a>
-          <a class="d-none d-lg-block link" id="videos" href="#">de videos</a>
-        <div id="menuBtn" class="menubtn d-block d-lg-none" style="background-image: url(resources/svg/sprite_60fps.svg)"></div>
-        <h1 id="top-title" class="section-title d-block d-lg-none">Peter Rober</h1>
-      </div>
-      <div class="menu d-block d-lg-none">
-        <ul>
-          <li><a class="link" id="home" href="#">home</a></li>
-          <li><a class="link" id="boek" href="#">het boek</a></li>
-          <li><a class="link" id="wiebenik" href="#">wie ben ik?</a></li>
-          <li><a class="link" id="instrumenten" href="#">de instrumenten</a></li>
-          <li><a class="link" id="videos" href="#">de videos</a></li>
-        </ul>
-      </div>
-      <div id="section-home" class="section">
-          <div class="row">
-            <div class="col-12 col-lg-6 order-lg-2">
-              <div class="section-1-text">
-                <p>Mijn nieuw boek over de praktijk van de gezinstherapie.</p>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 order-lg-1 img-col text-center text-lg-left">
-              <img id="front-img" class="img-fluid enter-view" src="resources/cover.jpg" alt="Peter Rober - Samen in Gezinstherapie">
-            </div>
-        </div>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
 
-      </div>
-      <div id="section-boek" name="het boek" class="section">
-
-          <div class="row">
-            <div class="col-12 col-lg-6 enter-view">
-
-                <h1 class="d-none d-lg-block section-title">het boek</h1>
-
-                <p><i>Gezinnen bestaan er in alle vormen en kleuren, en allemaal zijn ze in liefde geworteld. Maar tegen de tijd dat een gezin hulp van een gezinstherapeut zoekt, zijn wrok, angst en teleurstelling vaak uitgegroeid tot de dominante krachten die het dagelijks leven beheersen.</i></p>
-                <p>&nbsp;</p>
-                <p>Dit boek is geworteld in het wetenschappelijk onderzoek over psychotherapie in het algemeen en over de gezinstherapie in het bijzonder. Toch staat de therapeutische praktijk centraal. Het boek is rijk aan gevalsstudies van gezinnen in nood, die nauwgezet en grondig geanalyseerd worden. Het uitgangspunt is telkens opnieuw dat gezinnen lijden en bezorgd zijn, maar dat ze ook krachten in zich dragen om hun moeilijkheden het hoofd te bieden.</p>
-                <p>De gezinstherapeut kan daarbij helpen.</p>
-                <p>&nbsp;</p>
-                <p>Het boek is een welkome en hoopvolle toegangspoort tot het complexe domein van de gezinstherapeutische praktijk.</p>
-                <p>Het boek werd uitgegeven bij Pelckmans Pro.</p>
+        <title>Peter Rober - Gezinstherapeut Zijn</title>
+    </head>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#main">Peter Rober</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                            >Gezinstherapeut zijn</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wie-ben-ik">Wie ben ik?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feedback-instrumenten"
+                            >Feedback instrumenten</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-      </div>
-      <div id="section-wiebenik" name="wie ben ik?" class="section">
-        <div class="row align-items-lg-center">
-          <div class="col-12 col-lg-5 offset-lg-1 enter-view">
-            <h1 class="d-none d-lg-block section-title">wie ben ik?</h1>
-
-            <p>Ik ben als hoogleraar verbonden aan het Instituut voor Familiale en Seksuologische Wetenschappen van de Faculteit Geneeskunde van de KU Leuven.</p>
-            <p>Ik ben klinisch psycholoog en gezinstherapeut, werkzaam in Context - Centrum voor Relatie- en Gezinstherapie van het UPC KU Leuven.</p>
-            <p>Ik heb verschillende boeken over gezinstherapie geschreven, onder andere, Samen in therapie (Acco, 2003) en Gezinstherapie in Praktijk (Acco, 2012).</p>
-            <p>Daarnaast schreef ik ook boeken met verhalen die zich in de wereld van de psychotherapie afspelen, namelijk De Naakte Therapeut (Acco, 2012) en Lief en Leed (Acco, 2017).</p>
-          </div>
-          <div class="col-12 col-lg-6 img-col text-center text-sm-right">
-            <img src="resources/about.jpg" alt="Peter Rober" class="img-fluid enter-view">
-          </div>
-        </div>
-      </div>
-      <div id="section-instrumenten" name="de instrumenten" class="section">
-        <!--
-          <div class="row">
-            <div class="col-12 enter-view text-sm-left">
-              <h1 class="d-none d-lg-block section-title">de instrumenten</h1>
-
-              <p>In het boek Samen in Gezinstherapie wordt er voor gepleit dat gezinstherapeuten zoveel mogelijk systematisch de feedback van de cli&euml;nten gebruiken om de therapie richting te geven.</p>
-              <p>Daarbij zijn de feedback instrumenten die ik samen met Karine Van Tricht heb ontwikkeld bijzonder nuttig.</p>
-              <p>Deze instrumenten zijn gratis te downloaden.</p>
-              <div class="row">
-                <div class="col-12 text-center text-sm-left
-
-                ">
-                    <button id="download-btn" type="button" class="enter-view btn-default btn" name="button">download</button>
+    </nav>
+    <section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/book_cover.jpg" class="img-fluid" alt="" />
                 </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-4 img-col text-center">
-              <img src="resources/instrumenten.png" alt="Peter Rober - Instrumenten" class="enter-view img-fluid">
-            </div>
-        </div>-->
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 col-lg-5 offset-lg-1 enter-view text-sm-left">
-              <h1 class="d-none d-lg-block section-title">de instrumenten</h1>
-
-              <p>In het boek Samen in Gezinstherapie wordt er voor gepleit dat gezinstherapeuten zoveel mogelijk systematisch de feedback van de cli&euml;nten gebruiken om de therapie richting te geven.</p>
-              <p>Daarbij zijn de feedback instrumenten die ik samen met Karine Van Tricht heb ontwikkeld bijzonder nuttig.</p>
-              <p>Deze instrumenten zijn gratis te downloaden.</p>
-              <div class="row">
-                <div class="col-12 text-center text-sm-left">
-                    <button id="download-btn" type="button" class="enter-view btn-default btn" name="button"><a class="no-style" href="https://www.dropbox.com/sh/vldj0lo016jxeo1/AADXJZ2of_2WG8x2QLoXxPt_a?dl=0" target="_blank">download</a></button>
+                <div class="col-md-6">
+                    <h1>Mijn nieuwe boek</h1>
+                    <h2>Een gezinstherapeut weet dat verbinding geneest.</h2>
+                    <p>
+                        Dit boek gaat over gezinstherapie, en de gezinstherapeut
+                        is het hart van het gezinstherapeutische proces.
+                    </p>
+                    <p>
+                        Maar gezinstherapeut zijn is soms moeilijk. Je wordt
+                        getroffen door de teleurstelling in het gezin, het
+                        verdriet en de pijn. De liefde die je in het gezin
+                        vermoedt is nergens te bespeuren. Maar je blijft er in
+                        geloven, want zonder liefde is er geen hoop en heeft
+                        gezinstherapie geen zin. Je luistert naar het verhaal
+                        van hun lijden en je ziet hoe ze zich inzetten om hun
+                        demonen het hoofd te bieden, en ze vragen daarbij jouw
+                        hulp.
+                    </p>
+                    <p>
+                        Gezinstherapeut, daar sta je dan. Wat kan je doen om hen
+                        te helpen?
+                    </p>
+                    <p>
+                        Dit boek biedt een antwoord. Bevindingen uit
+                        wetenschappelijk onderzoek, theoretische inzichten,
+                        eenvoudige conceptuele schema’s en vooral veel
+                        doorleefde verhalen maken duidelijk hoe de
+                        gezinstherapeut kan helpen, en hoe gezinstherapie – vaak
+                        samen met andere vormen van psychotherapie – een
+                        verschil kan maken.
+                    </p>
+                    <p>
+                        Het doel van gezinstherapie is niet genezing, maar
+                        verbinding. Een gezinstherapeut weet dat verbinding
+                        geneest. Verbinding beschermt ook tegen lijden in de
+                        toekomst.
+                    </p>
+                    <p>
+                        <strong>
+                            <a href="www.pelckmans.be" target="_blank">
+                                Het boek is verkrijgbaar via de Pelckmans
+                                website
+                            </a>
+                        </strong>
+                    </p>
                 </div>
-              </div>
             </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 text-center text-lg-right text-xl-center">
-              <img src="resources/instrumenten.png" alt="Peter Rober - Instrumenten" class="enter-view img-fluid">
-            </div>
-          </div>
-
         </div>
-
-      </div>
-      <div id="section-videos" name="de videos" class="section">
-          <div class="row enter-view">
-            <div class="col-12 d-none d-lg-block">
-              <h1 class="d-none d-lg-block section-title text-center">de videos</h1>
+    </section>
+    <section id="wie-ben-ik">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Wie ben ik?</h1>
+                    <p>
+                        Ik ben gezinstherapeut, supervisor en opleider. Ik werk
+                        in Context – het Centrum voor Relatie- en Gezinstherapie
+                        van het UPC KU Leuven.
+                    </p>
+                    <p>
+                        Ik ben als hoogleraar verbonden aan het Instituut voor
+                        Familiale en Seksuologische Wetenschappen van de
+                        Faculteit Geneeskunde van de KU Leuven.
+                    </p>
+                    <p>Ik ben een vader, en een zoon.</p>
+                    <p>
+                        Ik heb geluk. Ik mag samen leven met de vrouw die ik
+                        doodgraag zie. Ze is mijn geliefde en mijn beste vriend.
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="images/wie_ben_ik.jpg" class="img-fluid" alt="" />
+                </div>
             </div>
-            <div class="col-12 col-lg-6 text-center">
-              <div class="video-wrapper">
-                <iframe width="auto" src="https://www.youtube.com/embed/UrymC-fZP2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+        </div>
+    </section>
+    <section id="feedback-instrumenten">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="mb-4">Feedback instrumenten</h1>
+                    <img
+                        src="images/instrumenten.jpg"
+                        class="img-fluid mb-4"
+                        alt=""
+                    />
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <p>
+                                In de hedendaagse professionele literatuur wordt
+                                er voor gepleit dat psychotherapeuten zoveel
+                                mogelijk systematisch de feedback van de
+                                cliënten gebruiken om de therapie richting te
+                                geven. Ik heb samen met Karine Van Tricht
+                                feedback instrumenten ontwikkeld die specifiek
+                                in het werken met gezinnen en paren bijzonder
+                                nuttig zijn. Deze instrumenten zijn gratis te
+                                downloaden via deze
+                                <a
+                                    href="https://www.dropbox.com/sh/vldj0lo016jxeo1/AADXJZ2of_2WG8x2QLoXxPt_a?dl=0"
+                                    target="_blank"
+                                    >link</a
+                                >.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-lg-6 text-center">
-              <div class="video-wrapper">
-                <iframe width="auto" src="https://www.youtube.com/embed/WDCywHqCv1s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Contact</h1>
+                    <p>
+                        Je kan mij bereiken via
+                        <a href="mailto: peter.rober@med.kuleuven.be">email</a>.
+                    </p>
+                </div>
             </div>
-            <div class="col-12 text-center">
-              <button id="videos-btn" type="button" name="button" class="btn btn-default"><a class="no-style" href="https://www.youtube.com/channel/UC6NbPwSifBGwC0KCHnYiN6w?view_as=subscriber" target="_blank">alle videos</a></button>
-            </div>
-          </div>
-      </div>
-    </div>
-
-  </body>
-  <script type="text/javascript" src="js/enter-view.js">
-  </script>
-  <script type="text/javascript" src="js/main.js"></script>
+        </div>
+    </section>
+    <body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
